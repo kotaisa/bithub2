@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>アンケート</title>
+        <link rel="stylesheet" href="css/form2.css">
+    </head>
+
+    <body>
+        <p class="title">アンケート</p>
+
+        <p class="topline"></p>
+
+        <div class="content">
+            <p>
+            AxiZの研修をご利用いただき、誠にありがとうございます。<br>
+            以下の内容の記入及び送信をして頂けると幸いです。
+            </p>
+               
+            <p>会社名 <span class="required">必須</span><br>
+            <input class="box1" type="text" name="name" placeholder="例)株式会社テクノコア">
+            </p>
+
+            <p>お名前 <span class="required">必須</span><br>
+            <input class="box1" type="text" name="name" placeholder="例)手久野　興亜">
+            </p>
+
+            <p>メールアドレス
+            <input class="box1" type="text" name="name" placeholder="例)example@axiz.co.jp">
+            </p>
+
+            <p>年齢<br>
+            <input class="box2" type="text" name="name" value="23">
+            </p>
+
+            <p>受講コース<br>
+            <label><input type="radio" name="gender" value="java" checked>Java</label>
+            <label><input type="radio" name="gender" value="infra">インフラ</label>
+
+            <p>会場<br>
+            <select name="place" class="box3">
+                <option value="nihonnbashiA" selected >日本橋A教室</option>
+                <option value="nihonnbasiB">日本橋B教室</option>
+                <option value="nihonnbasiC">日本橋C教室</option>
+            </select>
+            </p>
+                
+            <div class="item">詳しく学びたい内容（複数回答可）<br>
+                <label><input type="checkbox" name="recipe" value="business">ビジネスマナー</label>
+                <label><input type="checkbox" name="recipe" value="h/c">HTML/CSS</label>
+                <label><input type="checkbox" name="recipe" value="javasc">JavaScript</label>
+                <label><input type="checkbox" name="recipe" value="java">Java</label>
+                <label><input type="checkbox" name="recipe" value="detabase">データベース</label>
+                <label><input type="checkbox" name="recipe" value="linux">Linux</label>
+            </div>
+                    
+            </p>
+            <p>ご意見<br>
+            <textarea name="free" rows="8" cols="65">自由にご記入ください</textarea></p>
+                
+            <p><button type="submit">送信する</button></p>
+        </div>
+
+        <p class="bottomline"></p>
+
+        <p class="axiz">Copyright(C)AxiZ</p>
+
+    </body>
+</html>
